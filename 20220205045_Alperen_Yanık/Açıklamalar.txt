@@ -1,0 +1,20 @@
+.ipynb uzantılı dosya, Google Colab üzerinde çalıştırılması gereken kodları içermektedir. Öncelikle bu kodları çalıştırıp best.pt dosyasını elde etmemiz gerekmektedir. Bu dosya eğitim sürecinde elde edilen en iyi performansa sahip ağırlıkları (weights) ve yapılandırma bilgilerini içerir.
+
+
+best.pt
+Nedir?
+  Bu dosya, trafik işareti algılama projesinde eğitilmiş YOLOv8 modeline ait ağırlıkları içeriyor. Eğitimin tamamlanmasının ardından, modelin en iyi performansı gösterdiği epoch'taki ağırlıklar bu dosyada saklanır.
+
+Ne İşe Yarar?
+  Modelin, trafik işaretlerini tanımak için öğrendiği tüm özellikler bu dosyada kodlanmıştır.
+Projedeki değerlendirme ve tahmin işlemlerinde kullanılır.
+
+
+yolov8n.pt
+Nedir?
+  Bu, YOLOv8 ailesinin "nano" (n) versiyonuna ait önceden eğitilmiş bir model dosyasıdır. YOLOv8'nin en hafif ve hızlı varyantıdır, düşük kaynak gereksinimleri olan cihazlarda kullanılmak üzere tasarlanmıştır.
+
+Ne İşe Yarar?
+  Transfer öğrenimi için temel model olarak kullanılabilir. Mevcut ağırlıklar üzerine, trafik işareti verilerini kullanarak eğitilebilir.
+Önceden eğitilmiş olduğundan, genel nesne algılama görevleri için doğrudan kullanılabilir.
+Eğitim veya test süreçlerinde karşılaştırma amacıyla kullanılabilir.
